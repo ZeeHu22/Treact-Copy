@@ -105,8 +105,42 @@ nav {
     width: 100%;
     max-width: 1200px;
     display: flex;
+    margin: 0 auto;
+    padding: 96px 0;
 }
 
 #home__left {
     width: 40%;
+}
+
+#home__left .title {
+    font-size: 36px;
+}
+
+#home .description {
+    font-size: 16px;
+    margin: 32px 0;
+}
+
+.home__footer img {
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    display: block;
+}
+
+.home__footer {
+    color: #a0aec0;
+    margin: 80px 0 0;
+}
+
+#home__right {
+    width: 60%;
+}
+
+#home__right img {
+    max-width: 100%;
+    max-height: 100vh;
+    height: auto;
+    object-fit: contain;
 }
