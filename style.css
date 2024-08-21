@@ -331,3 +331,196 @@ nav {
     margin: 12px 0 0;
     color: #718096;
 }
+
+/*PRICING*/
+
+#pricing .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0 0;
+}
+
+#pricing .row__title {
+    margin: 0 0 16px;
+    font-size: 16px;
+    color: #6415ff;
+}
+
+#pricing .row__head {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+#pricing .row__description {
+    margin: 16px 0 0;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    color: #7c8ba1;
+    max-width: 50%;
+}
+
+/*PRICING TABLES*/
+
+#pricing .row__prices {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 64px;
+    gap: 20px;
+}
+
+#pricing .row__prices__item {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #2424241c;
+    padding: 16px 0px; 
+    flex-basis: 30%; 
+    box-sizing: border-box; 
+    min-width: 230px; 
+    width: calc(100%/3);
+    flex-basis: 30%;
+    border-radius: 12px;
+}
+
+#pricing .row__prices__item__top, 
+#pricing .row__prices__item__middle, 
+#pricing .row__prices__item__bottom {
+    width: 100%;
+    padding: 32px 64px;
+    border: none;
+}
+
+#pricing .row__prices__item__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pricing .row__prices__item__top--title {
+    font-size: 20px;
+}
+
+#pricing .row__prices__item__top--price {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+#pricing .row__prices__item__top--sub {
+    font-size: 16px;
+    color: #a0aec0;
+}
+
+#pricing .row__prices__item__middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px solid #2424241c;
+    border-bottom: 2px solid #2424241c;
+    margin: 0;
+    padding: 0 0 32px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#pricing .row__prices__item__middle--head {
+    padding: 32px 0 0 0;
+}
+
+#pricing .row__prices__item__middle p{
+    font-weight: bold;
+}
+
+#pricing .row__prices__item__middle ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #718096;
+}
+
+#pricing .row__prices__item__middle li {
+    margin: 20px 0 0 0;
+}
+
+#pricing .row__prices__item__bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+#pricing .row__prices__item__bottom button {
+    padding: 12px 32px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#pricing .row__prices__item__bottom button:hover {
+    transform: translate(1px, -1px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#pricing .row__prices__item:nth-child(1) {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#pricing .row__prices__item:nth-child(1):before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+#pricing .row__prices__item:nth-child(1) .row__prices__item__bottom button {
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+    color: #ffffff;
+}
+
+#pricing .row__prices__item:nth-child(2) {
+    background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+    color: #ffffff;
+    border: none;
+}
+
+#pricing .row__prices__item:nth-child(2) .row__prices__item__top--title,
+#pricing .row__prices__item:nth-child(2) .row__prices__item__middle--head,
+#pricing .row__prices__item:nth-child(2) .row__prices__item__top--sub,
+#pricing .row__prices__item:nth-child(2) .row__prices__item__middle ul li {
+    color: #ffffff;
+}
+
+#pricing .row__prices__item:nth-child(2) .row__prices__item__bottom button {
+    background-color: #ffffff;
+    color: #6415ff;
+}
+
+#pricing .row__prices__item:nth-child(3) {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#pricing .row__prices__item:nth-child(3):before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
+#pricing .row__prices__item:nth-child(3) .row__prices__item__bottom button {
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+    color: #ffffff;
+}
+
+/*FOOTER*/
