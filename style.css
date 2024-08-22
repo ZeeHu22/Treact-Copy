@@ -258,17 +258,21 @@ nav {
   margin: 0 0 16px;
   font-size: 16px;
   color: #6415ff;
+  text-align: center;
 }
 
 #features .container .head {
   font-size: 48px;
   font-weight: bolder;
+  text-align: center;
 }
 
 #features .container .description {
   margin: 16px 0 32px;
   font-size: 18px;
   color: #7c8ba1;
+  text-align: center;
+  max-width: 50%;
 }
 
 #features .container .row {
@@ -301,6 +305,11 @@ nav {
   flex-direction: column;
 }
 
+#features .container .row .card__description .description {
+  text-align: left;
+  max-width: 100%;
+}
+
 #features .container .row .card__description h2 {
   color: #243e63;
 }
@@ -308,6 +317,10 @@ nav {
 @media (max-width: 1024px) {
   #features .container .head {
     font-size: 30px;
+  }
+
+  #features .container .row .card .description {
+    max-width: 100%;
   }
 }
 
@@ -319,7 +332,11 @@ nav {
   }
 
   #features .container .row .card {
-    max-width: 50%;
+    max-width: 80%;
+  }
+
+  #features .container .description {
+    max-width: 80%;
   }
 }
 
