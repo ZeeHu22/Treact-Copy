@@ -913,6 +913,106 @@ nav {
     flex-direction: column;
     align-items: center;
   }
+
+  #testimonials .review__user {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #testimonials .review__user__buttons {
+    margin-top: 32px;
+  }
+}
+
+/*GET STARTED*/
+
+#get-started {
+  padding: 96px 0;
+}
+
+#get-started .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 80px 64px;
+  background-color: #6415ff;
+  color: #f7fafc;
+  border-radius: 8px;
+}
+
+#get-started .container .description {
+  font-size: 30px;
+  font-weight: bold;
+  max-width: 50%;
+}
+
+#get-started .container .buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#get-started .container .buttons button {
+  font-size: 16px;
+  font-weight: bold;
+  color: #f7fafc;
+  border-radius: 9999px;
+  padding: 20px 40px;
+  transition: all 300ms;
+}
+
+#get-started .container .buttons .button--primary {
+  background-color: #f56565;
+}
+
+#get-started .container .buttons .button--primary:hover {
+  filter: contrast(1.5);
+  color: #f7fafc;
+}
+
+#get-started .container .buttons .button--secondary {
+  background-color: #6415ff;
+  border: 1px solid #f7fafc;
+}
+
+#get-started .container .buttons .button--secondary:hover {
+  background-color: #f7fafc;
+  color: #6415ff;
+}
+
+@media (max-width: 1024px) {
+  #get-started .container {
+    flex-direction: column;
+  }
+
+  #get-started .container .description {
+    text-align: center;
+    max-width: 75%;
+  }
+
+  #get-started .container .buttons {
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  #get-started .container .description {
+    font-size: 24px;
+    max-width: 90%;
+  }
+
+  #get-started .container .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #get-started .container .buttons button {
+    font-size: 14px;
+    padding: 12px 24px;
+  }
 }
 
 /*FOOTER*/
